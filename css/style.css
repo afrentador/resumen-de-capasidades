@@ -2,11 +2,12 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
+    /* border: 1px solid red; */
 }
 body{
     font-family: 'Hanken Grotesk';
     height: 100vh;
-    background-color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,7 +17,7 @@ body{
     height: 510px;
     display: flex;
     border-radius: 50px;
-    background-color: #fff;
+    box-shadow: 10px 10px 10px #DFE7FF;
 }
 .container_puntaje{
     padding: 15px;
@@ -73,8 +74,7 @@ body{
 }
 .container_resultado{
     padding: 40px;
-    width: 370px;
-    
+    width: 370px; 
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -87,54 +87,81 @@ body{
 }
 .container_resultado-skill{
     height: 100%;
-    padding: 25px;
     font-size: 18px;
     font-weight: 700;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    row-gap: 40px;
+    row-gap: 15px;
 }
-.skill{
+.skill__reaction{
     display: flex;
     justify-content: space-between;
+    background-color: #ffe8e8;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 15px;
 }
-.skill_reaction-1{
+.skill__reaction-1{
     display: flex;
     color: #ff5757;
     gap: 8px;
 }
-.skill_reaction-2{
+.skill__reaction-2{
     display: flex;
     color: #25304f;
     gap: 8px;
 }
-.skill_memory-1{
+.skill__memory{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFF7DF;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 15px;
+}
+.skill__memory-1{
     display: flex;
     color: #ffb01f;
     gap: 8px;
 }
-.skill_memory-2{
+.skill__memory-2{
     display: flex;
     color: #25304f;
     gap: 8px;
 }
-.skill_verbal-1{
+.skill__verval{
+    display: flex;
+    justify-content: space-between;
+    background-color: #E8FFFF;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 15px;
+}
+.skill__verbal-1{
     display: flex;
     color: #00bd91;
     gap: 8px;
 }
-.skill_verbal-2{
+.skill__verbal-2{
     display: flex;
     color: #25304f;
     gap: 8px;
 }
-.skill_visual-1{
+.skill__visual{
+    display: flex;
+    justify-content: space-between;
+    background-color: #DFE7FF;
+    border-radius: 10px;
+    font-size: 15px;
+    padding: 15px;
+}
+.skill__visual-1{
     display: flex;
     color: #1125d4;
     gap: 8px;
 }
-.skill_visual-2{
+.skill__visual-2{
     display: flex;
     color: #25304f;
     gap: 8px;
@@ -152,12 +179,47 @@ body{
     cursor: pointer;
 }
 .container_resultado-buttom:hover{
-    background-color: blue;
+    background: linear-gradient(#6747ea, #2e2be9);
 }
-@media only screen and (max-width: 740px){
+@media only screen and (max-width: 550px){ 
     .container{
         width: 100%;
         height: 100%;
         display: block;
+        box-shadow: none;
+    }
+    .container_puntaje{
+        padding: 0;
+        width: 425px;
+        height: 360px;
+        border-radius:  2px 2px 25px 25px;
+    }
+    .container_puntaje-title{
+        font-size: 18px;
+    }
+    .container_puntaje-circle {
+        height: 150px;
+        width: 150px;
+        margin-top: 10px;
+    }
+    .container_puntaje-circle-G{
+        font-size: 55px;
+    }
+    .container_puntaje-circle-p{
+        font-weight: 12;
+    }
+    .container_puntaje-scored-a{
+        font-size: 25px;
+    }
+    .container_puntaje-scored-b{
+        font-size: 14px;
+        padding: 13px;
+    }    
+    .container_resultado {
+        padding: 40px;
+        width: 425px;
+    }
+    .container_resultado-skill {
+        padding: 20px 0;
     }
 }
