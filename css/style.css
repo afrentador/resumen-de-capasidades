@@ -190,7 +190,7 @@ body{
     }
     .container_puntaje{
         padding: 0;
-        width: 425px;
+        width: 370px;
         height: 360px;
         border-radius:  2px 2px 25px 25px;
     }
@@ -217,7 +217,7 @@ body{
     }    
     .container_resultado {
         padding: 40px;
-        width: 425px;
+        width: 370px;
     }
     .container_resultado-skill {
         padding: 20px 0;
